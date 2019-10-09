@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    str = prompt("Nhập vào một ngôi sao bất kỳ : ");
+        var ns = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe" , "Regulus"];
+        var cs = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major",  "Leo"];
+    var result = [];
+    function search() {
+        if(ns.indexOf(str) == -1){
+            alert("Không tìm thấy");
+        }else{
+            result = cs[ns.indexOf(str)];
+            alert(result);
+        }
+    }
+    search();
+</script>
+</body>
+</html>
